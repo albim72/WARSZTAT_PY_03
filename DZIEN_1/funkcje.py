@@ -1,4 +1,5 @@
 #przykład 1
+import math
 
 def fy(k):
     return k**5
@@ -11,4 +12,17 @@ def policz(a,b,c,y):
 
 print(policz(3,4,8,6))
 print(n)
+
+#przykład 2
+
+def gx(n,m=1,k=2,h=2):
+    return math.sqrt(n+m)*k-h
+
+print(gx(5,8,2,5))
+print(gx(7,8))
+print(gx(7))
+print(gx(11,11,11))
+
+print(gx(10,h=46))
+
 
