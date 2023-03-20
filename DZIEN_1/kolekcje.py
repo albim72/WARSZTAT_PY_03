@@ -72,3 +72,23 @@ kolory.add("cyan")
 print(kolory)
 kolory.update(["czarny","seledyn","wrzos"])
 print(kolory)
+
+#słownik
+osoba = {
+    "imię":"Jan",
+    "nazwisko":"Kot",
+    "miasto":"Kraków",
+    "rok urodzenia":1970
+}
+
+print(osoba)
+print(osoba["miasto"])
+osoba["stanowisko"] = "dyrektor"
+print(osoba)
+
+print(osoba.values())
+print(osoba.keys())
+print(osoba.items())
+
+for k,v in osoba.items():
+    print(f"{k}: {v}")
