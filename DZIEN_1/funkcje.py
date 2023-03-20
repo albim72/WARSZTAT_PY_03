@@ -33,3 +33,16 @@ rank("Go","Ruby","Java",nrrank=67)
 rank("Python","Go","C#","Ruby","Java",nrrank=69)
 
 
+#przykład 4
+print((lambda v:v**3)(6))
+
+b = lambda u,k=3:u+90-k
+print(b(1,2))
+print(b(9))
+
+def multi(n):
+    return lambda a:a*n
+
+print(multi(9)(7))
+
+n = [67,45,-9,23,1,234,-99,987,135,98,15,26,45,-33]
