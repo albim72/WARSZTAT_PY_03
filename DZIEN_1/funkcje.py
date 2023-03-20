@@ -25,4 +25,11 @@ print(gx(11,11,11))
 
 print(gx(10,h=46))
 
+#przykład 3
+def rank(*lang,nrrank):
+    print(f'ranking nr {nrrank} języków programowania:  1->{lang[0]}, 2->{lang[1]}, 3-> {lang[2]}')
+
+rank("Go","Ruby","Java",nrrank=67)
+rank("Python","Go","C#","Ruby","Java",nrrank=69)
+
 
