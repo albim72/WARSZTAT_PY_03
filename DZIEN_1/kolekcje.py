@@ -55,3 +55,10 @@ print(ip_0)
 print(ip_1)
 
 print(ip==ip_1)
+
+#krotka
+
+miasta = ("Kraków","Poznań","Lublin","Warszawa","Rzeszów","Kraków","Rzeszów")
+print(miasta)
+print(miasta[5])
+print(type(miasta))
