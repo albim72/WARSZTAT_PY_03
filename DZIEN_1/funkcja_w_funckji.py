@@ -1,4 +1,7 @@
 #przyklad 1
+import random
+
+
 def user(nazwa):
     return f"nazwa użytkownika: {nazwa}"
 
@@ -32,6 +35,31 @@ def przejazd(oplata):
 print(przejazd(1)())
 print(przejazd(0)())
 print(przejazd(-3)())
+
+#przykład 3
+
+def opakowanie(funkcja):
+    def wrapper(*args):
+        print("opakowanie funkcji wywoływanej przez funkcję opakowanie...")
+        funkcja(*args)
+        n = random.random()*100
+        print(f"po wykonaniu funkcji {funkcja.__name__} losujemy wartość n -> {round(n)}")
+    return wrapper
+
+def jazda(pojazd):
+    print(f"jazda z użyciem pojazdu: {pojazd}")
+print("_______________________________________________")
+p = opakowanie(jazda)
+p("rower")
+
+@opakowanie
+def obliczenie(a,b,c):
+    wynik = a+b**c
+    print(f'wynik działania: {wynik}')
+
+print("_______________________________________________")
+obliczenie(5,8,3)
+
 
 
 
