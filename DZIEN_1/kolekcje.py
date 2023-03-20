@@ -62,3 +62,13 @@ miasta = ("Kraków","Poznań","Lublin","Warszawa","Rzeszów","Kraków","Rzeszów
 print(miasta)
 print(miasta[5])
 print(type(miasta))
+
+#zbiór
+kolory = {"zielony","czerwony","zielony","biały","fioletowy","zółty"}
+print(kolory)
+print(kolory)
+print(kolory)
+kolory.add("cyan")
+print(kolory)
+kolory.update(["czarny","seledyn","wrzos"])
+print(kolory)
