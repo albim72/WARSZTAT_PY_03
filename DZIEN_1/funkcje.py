@@ -46,3 +46,20 @@ def multi(n):
 print(multi(9)(7))
 
 n = [67,45,-9,23,1,234,-99,987,135,98,15,26,45,-33]
+
+listparz = list(filter(lambda x:x%2==0,n))
+print(listparz)
+
+def nparz(x):
+    return x%2!=0
+
+nparzyste = list(filter(nparz,n))
+print(nparzyste)
+
+
+cube = list(map(lambda x:x**3,n))
+print(cube)
+
+bigtable = [r**7 for r in range(10000000)]
+print(sum(bigtable))
+
