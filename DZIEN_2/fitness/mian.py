@@ -1,5 +1,6 @@
 from osoba import Osoba
 from klient import Klient
+from trener import Trener
 
 print("______ osoba 1 __________")
 os1 = Osoba("Jan",34,88,175)
@@ -25,5 +26,13 @@ print(k1.wiek_za_n_lat(10))
 k1.print_osoba()
 print(k1.infosport())
 print(k1.infoklub())
-
 print(f"jaki to obiekt?? -> {type(k1)}")
+
+print("______ trener 1 __________")
+t1 = Trener(78,"Olaf",27,78,182,66,76564,5,False,"pływanie",4,"100m -> 1m 10s",9,"Dracon","Warszawa")
+print(t1.infotrener())
+print(t1.wiek_za_n_lat(20))
+t1.print_osoba()
+print(t1.infosport())
+print(t1.infoklub())
+print(f"jaki to obiekt?? -> {type(t1)}")
